@@ -1,0 +1,125 @@
+<script type="text/javascript">
+    var bannersUrls = new Array("../public/imgs/hofgut_aussen.jpg","../public/imgs/bodensee.jpg","../public/imgs/traktor_feld.jpg","../public/imgs/hofgut_aussen-alles.jpg","../public/imgs/hofgut_schild.jpg"); 
+    var timeSpeed = 4000;
+    var firstBannerTimeSpeed = 4000;
+    var acctualBanner = 0;
+    var repeatFirstBanner = true;   
+    
+    $(document).ready(function() {
+        $("img.ImageBannerTop").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").hide(); 
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner + 1]);   
+
+        // #### MG: 2011-12-13
+        if(bannersUrls.length > 1)
+        {
+            setTimeout('nextBanner()', firstBannerTimeSpeed);
+        }
+      
+        
+        $(".ContainerBannerRotator").hoverIntent(function() { $(this).find(".ContainerBannerEditButton").show(); },
+            function() { $(this).find(".ContainerBannerEditButton").fadeOut('fast'); }); 
+            
+        //        $('.BannerRotatorOpenEditPopup').click(function() {
+        //            $('#HiddenModalEditBanners').slideDown('normal');                                                 
+        //        });   
+        //        
+        //        $('#EditBannersCloseButton').click(function() {
+        //            $('#HiddenModalEditBanners').slideUp('normal');
+        //        });
+        
+    });
+    
+    function nextBanner()
+    {
+        $("img.ImageBannerTop").show();
+        acctualBanner = acctualBanner + 1;
+
+        if(acctualBanner > (bannersUrls.length - 1))
+        {
+            if(repeatFirstBanner)
+                acctualBanner = 0;
+            else
+                acctualBanner = 1; 
+        }
+
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").show();
+        
+        $("img.ImageBannerTop").fadeOut(1500, function() {
+            $(this).attr("src", bannersUrls[acctualBanner]);
+            //$(this).show();
+            //$(this).fadeIn('fast');
+        });                       
+         
+        setTimeout('nextBanner()', timeSpeed);
+    } 
+    
+</script>
+<div class="Column2">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+    <span style="font-weight: bold;">Datenschutzpolicy zu Google Analytics</span><br /><br />„Diese Webseite benutzt Google Analytics, einen Webanalysedienst der 
+Google Inc. („Google“). Google Analytics verwendet sog. „Cookies“, 
+Textdateien, die auf Ihrem Computer gespeichert werden und die eine 
+Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den 
+Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite 
+(einschließlich Ihrer IP-Adresse) werden an einen Server von Google in 
+den USA übertragen und dort gespeichert. Google wird diese Informationen
+ benutzen, um Ihre Nutzung der Webseite auszuwerten, um Reports über die
+ Webseitenaktivitäten für die Webseitenbetreiber zusammenzustellen und 
+um weitere mit der Websitenutzung und der Internetnutzung verbundene 
+Dienstleistungen zu erbringen. Auch wird Google diese Informationen 
+gegebenenfalls an Dritte übertragen, sofern dies gesetzlich 
+vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google 
+verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen 
+Daten von Google in Verbindung bringen. Sie können die Installation der 
+Cookies durch eine entsprechende Einstellung Ihrer Browser Software 
+verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall 
+gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich 
+nutzen können. Durch die Nutzung dieser Webseite erklären Sie sich mit 
+der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor 
+beschriebenen Art und Weise und zu dem zuvor benannten Zweck 
+einverstanden. Der Erhebung und Nutzung Ihrer IP-Adresse durch Google 
+Analytics können Sie jederzeit mit Wirkung für die Zukunft 
+widersprechen. Nähere Informationen hierzu finden Sie unter  <a href="http://tools.google.com/dlpage/gaoptout?hl=de.">http://tools.google.com/dlpage/gaoptout?hl=de.</a><br /><br style="font-weight: bold;" /><span style="font-weight: bold;">Wir weisen Sie darauf 
+hin, dass auf dieser Webseite Google Analytics um den Code 
+„gat._anonymizeIp();“ erweitert wurde, um eine anonymisierte Erfassung 
+von IP-Adressen zu gewährleisten.“ </span>              
+</div>
+
+</div>
+        
+    </div>
+    
+    <div class="Column3">
+        
+    </div>
+
+    <div class="Clear"></div>
+
+    
+</div>
+
+            <div style="position: fixed; left: 0; bottom: 0; display: none;">
+                <input type="submit" name="ctl00$ContentPlaceHolderPage$ButtonRefresh" value="Refresh" id="ctl00_ContentPlaceHolderPage_ButtonRefresh" class="jQueryRefreshEditContent" />
+            </div>
+        
+</div>
+
+    <div id="ctl00_ContentPlaceHolderPage_UpdateProgressAll" style="display:none;">
+	
+            <div class="ProgressAll AjaxLoaderContainer">
+                <img class="AjaxLoader" src="../../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+            </div>
+        
+</div>
+
+    <div class="ProgressAll AjaxLoaderContainer ProgresUloadImageShop jQueryAjaxLoaderContainer" style="display: none;">
+        <img id="ctl00_ContentPlaceHolderPage_Image1" class="AjaxLoader" src="../../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+    </div>

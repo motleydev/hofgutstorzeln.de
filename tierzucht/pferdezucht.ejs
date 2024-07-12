@@ -1,0 +1,226 @@
+<script type="text/javascript">
+    var bannersUrls = new Array("../../public/imgs/pferde1.jpg","../../public/imgs/pferde1.jpg"); 
+    var timeSpeed = 3000;
+    var firstBannerTimeSpeed = 3000;
+    var acctualBanner = 0;
+    var repeatFirstBanner = true;   
+    
+    $(document).ready(function() {
+        $("img.ImageBannerTop").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").hide(); 
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner + 1]);   
+
+        // #### MG: 2011-12-13
+        if(bannersUrls.length > 1)
+        {
+            setTimeout('nextBanner()', firstBannerTimeSpeed);
+        }
+      
+        
+        $(".ContainerBannerRotator").hoverIntent(function() { $(this).find(".ContainerBannerEditButton").show(); },
+            function() { $(this).find(".ContainerBannerEditButton").fadeOut('fast'); }); 
+            
+        //        $('.BannerRotatorOpenEditPopup').click(function() {
+        //            $('#HiddenModalEditBanners').slideDown('normal');                                                 
+        //        });   
+        //        
+        //        $('#EditBannersCloseButton').click(function() {
+        //            $('#HiddenModalEditBanners').slideUp('normal');
+        //        });
+        
+    });
+    
+    function nextBanner()
+    {
+        $("img.ImageBannerTop").show();
+        acctualBanner = acctualBanner + 1;
+
+        if(acctualBanner > (bannersUrls.length - 1))
+        {
+            if(repeatFirstBanner)
+                acctualBanner = 0;
+            else
+                acctualBanner = 1; 
+        }
+
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").show();
+        
+        $("img.ImageBannerTop").fadeOut(1500, function() {
+            $(this).attr("src", bannersUrls[acctualBanner]);
+            //$(this).show();
+            //$(this).fadeIn('fast');
+        });                       
+         
+        setTimeout('nextBanner()', timeSpeed);
+    } 
+    
+</script>
+
+<div class="Column2">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-44f3-8850-ef5a96d50de3">
+   
+
+
+
+<div class="a832745f-8478-44f3-8850-ef5a96d50de3 Title">
+    <h1>Tierzucht - Pferdezucht</h1>
+</div>
+ 
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+    <div style="width: 0px; height: 0px;"></div>
+       
+       
+       
+       
+       
+       
+         
+      
+        Schon unsere Großväter züchteten und hielten Pferde - hier sind jetzt ihre Urenkel unterwegs:              
+                  
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><img src="../public/imgs/Enkel2.jpg" alt=" " border="0" /><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+    <div style="width: 0px; height: 0px;"></div><p class="MsoNormal">Wir halten Warmblüter und Ponys als Reit- und Fahrpferde und verschaffen diesen
+eine solide Grundausbildung.</p><p class="MsoNormal">Gelegentlich stehen Pferde aus eigener Zucht zum Verkauf.</p><p class="MsoNormal"> </p><p class="MsoNormal">Interesse?</p>              
+</div>
+
+</div>
+        
+    </div>
+    
+    <div class="Column3">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/pferd-caldera_large.jpg"><img src="../public/imgs/pferd-caldera.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4698-a368-6559f0325876">
+   
+
+<div style="border-bottom:1px solid white; padding:10px; background-color:#f8f5e2; margin-top:-20px;">
+	<strong>Caldera // 2013</strong>
+	<br/>
+	<a href="../public/imgs/pferd-caldera_large.jpg">Mehr Infos &rsaquo;&rsaquo;</a>
+	<br/>
+	<small style="margin-top:15px">von Concetto</small>
+</div>
+
+
+     
+ 
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/pferd-donau-stern_large.jpg"><img src="../public/imgs/pferd-donau-stern.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4698-a368-6559f0325876">
+   
+
+<div style="border-bottom:1px solid white; padding:10px; background-color:#f8f5e2; margin-top:-20px;">
+	<strong>Donau Stern // 2013</strong>
+	<br/>
+	<a href="../public/imgs/pferd-donau-stern_large.jpg">Mehr Infos &rsaquo;&rsaquo;</a>
+	<br/>
+	<small style="margin-top:15px">von Destano</small>
+</div>
+
+
+     
+ 
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/pferd-lichtnelke_large.jpg"><img src="../public/imgs/pferd-lichtnelke.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4698-a368-6559f0325876">
+   
+
+<div style="border-bottom:1px solid white; padding:10px; background-color:#f8f5e2; margin-top:-20px;">
+	<strong>Lichtnelke // 2013</strong>
+	<br/>
+	<a href="../public/imgs/pferd-lichtnelke_large.jpg">Mehr Infos &rsaquo;&rsaquo;</a>
+	<br/>
+	<small style="margin-top:15px">von Lingh</small>
+</div>
+
+
+     
+ 
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/pferd-paula_large.jpg"><img src="../public/imgs/pferd-paula.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+    </div>
+
+    <div class="Clear"></div>
+
+    
+</div>
+
+            <div style="position: fixed; left: 0; bottom: 0; display: none;">
+                <input type="submit" name="ctl00$ContentPlaceHolderPage$ButtonRefresh" value="Refresh" id="ctl00_ContentPlaceHolderPage_ButtonRefresh" class="jQueryRefreshEditContent" />
+            </div>
+        
+</div>
+
+    <div id="ctl00_ContentPlaceHolderPage_UpdateProgressAll" style="display:none;">
+	
+            <div class="ProgressAll AjaxLoaderContainer">
+                <img class="AjaxLoader" src="../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+            </div>
+        
+</div>
+
+    <div class="ProgressAll AjaxLoaderContainer ProgresUloadImageShop jQueryAjaxLoaderContainer" style="display: none;">
+        <img id="ctl00_ContentPlaceHolderPage_Image1" class="AjaxLoader" src="../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+    </div>
+

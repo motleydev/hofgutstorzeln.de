@@ -1,0 +1,246 @@
+<script type="text/javascript">
+    var bannersUrls = new Array("http://localhost:9000/public/imgs/hofgut_aussen.jpg","../public/imgs/bodensee.jpg","../public/imgs/traktor_feld.jpg","../public/imgs/hofgut_aussen-alles.jpg","../public/imgs/hofgut_schild.jpg"); 
+    var timeSpeed = 4000;
+    var firstBannerTimeSpeed = 4000;
+    var acctualBanner = 0;
+    var repeatFirstBanner = true;   
+    
+    $(document).ready(function() {
+        $("img.ImageBannerTop").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").hide(); 
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner + 1]);   
+
+        // #### MG: 2011-12-13
+        if(bannersUrls.length > 1)
+        {
+            setTimeout('nextBanner()', firstBannerTimeSpeed);
+        }
+      
+        
+        $(".ContainerBannerRotator").hoverIntent(function() { $(this).find(".ContainerBannerEditButton").show(); },
+            function() { $(this).find(".ContainerBannerEditButton").fadeOut('fast'); }); 
+            
+        //        $('.BannerRotatorOpenEditPopup').click(function() {
+        //            $('#HiddenModalEditBanners').slideDown('normal');                                                 
+        //        });   
+        //        
+        //        $('#EditBannersCloseButton').click(function() {
+        //            $('#HiddenModalEditBanners').slideUp('normal');
+        //        });
+        
+    });
+    
+    function nextBanner()
+    {
+        $("img.ImageBannerTop").show();
+        acctualBanner = acctualBanner + 1;
+
+        if(acctualBanner > (bannersUrls.length - 1))
+        {
+            if(repeatFirstBanner)
+                acctualBanner = 0;
+            else
+                acctualBanner = 1; 
+        }
+
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").show();
+        
+        $("img.ImageBannerTop").fadeOut(1500, function() {
+            $(this).attr("src", bannersUrls[acctualBanner]);
+            //$(this).show();
+            //$(this).fadeIn('fast');
+        });                       
+         
+        setTimeout('nextBanner()', timeSpeed);
+    } 
+    
+</script>
+
+
+    
+    <div class="Column2">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-44f3-8850-ef5a96d50de3">
+   
+
+
+
+<div class="a832745f-8478-44f3-8850-ef5a96d50de3 Title">
+    <h1>Hofgut Storzeln - Partner<br /></h1>
+</div>
+ 
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4578-9d8d-0d5a80ce5f49">
+   
+
+
+<div class="a832745f-8478-4578-9d8d-0d5a80ce5f49">
+    <div id="ctl00_ContentPlaceHolderPage_LayoutOfthePage_TemplateId_a832745f-8478-4578-9d8d-0d5a80ce5f49_SegmentId_ffbb8f54-3234-4d74-b510-b589c3940a82_partName_column2_ctl00_PanelContenerImage" class="PanelContenerImage imageRight">
+                                   
+        <img src="../public/imgs/iln.gif" border="0" />
+    
+    </div>  
+
+    <div style="width: 0px; height: 0px;"></div><ul style="text-align: left;"><li><span style="font-weight: bold;">ILN  -   Institut für Agrarökologie Singen</span><br /><br />Monitoring – Programm der Flora und Fauna auf              bewirtschafteten Flächen<br /></li></ul>
+    <div class="Clear"></div>
+</div>  
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4578-9d8d-0d5a80ce5f49">
+   
+
+
+<div class="a832745f-8478-4578-9d8d-0d5a80ce5f49">
+    <div id="ctl00_ContentPlaceHolderPage_LayoutOfthePage_TemplateId_a832745f-8478-4578-9d8d-0d5a80ce5f49_SegmentId_aab41be6-28ea-43dd-8e55-e408b11c5d2e_partName_column2_ctl00_PanelContenerImage" class="PanelContenerImage imageRight">
+                                   
+        <img src="../public/imgs/plenum.gif" border="0" />
+    
+    </div>  
+
+    <div style="width: 0px; height: 0px;"></div><ul><li><span style="font-weight: bold;">PLENUM</span><br /><br />Unterstützung und Förderung verschiedener Projekte zur
+Erhaltung und Entwicklung von Umwelt und Natur</li></ul>
+    <div class="Clear"></div>
+</div>  
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4578-9d8d-0d5a80ce5f49">
+   
+
+
+<div class="a832745f-8478-4578-9d8d-0d5a80ce5f49">
+    <div id="ctl00_ContentPlaceHolderPage_LayoutOfthePage_TemplateId_a832745f-8478-4578-9d8d-0d5a80ce5f49_SegmentId_68cd73e3-b327-48be-94e3-56b0f1c6a3f5_partName_column2_ctl00_PanelContenerImage" class="PanelContenerImage imageRight">
+                                   
+        <img src="../public/imgs/bioland.gif" border="0" />
+    
+    </div>  
+
+    <div style="width: 0px; height: 0px;"></div><ul><li><span style="font-weight: bold;">Bioland</span><br /><br />Das Hofgut Storzeln ist dem Biolandverband angeschlossen und
+wird nach den aktuell geltenden Richtlinien regelmäßig kontrolliert.
+(Betriebsnummer 706809)</li></ul>
+    <div class="Clear"></div>
+</div>  
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4578-9d8d-0d5a80ce5f49">
+   
+
+
+<div class="a832745f-8478-4578-9d8d-0d5a80ce5f49">
+    <div id="ctl00_ContentPlaceHolderPage_LayoutOfthePage_TemplateId_a832745f-8478-4578-9d8d-0d5a80ce5f49_SegmentId_baf4fa59-8c23-4415-b3f8-525d27c86720_partName_column2_ctl00_PanelContenerImage" class="PanelContenerImage imageRight">
+                                   
+        <img src="../public/imgs/abcert.gif" border="0" />
+    
+    </div>  
+
+    <div style="width: 0px; height: 0px;"></div><ul><li><span style="font-weight: bold;">ABCert</span><br /><br />Durchführung jährlicher Betriebskontrollen gemäß EG-Öko-VO
+und Biolandrichlinien. <br />(Kontroll-Nr.: D-BW-006-18216-A)</li></ul>
+    <div class="Clear"></div>
+</div>  
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4578-9d8d-0d5a80ce5f49">
+   
+
+
+<div class="a832745f-8478-4578-9d8d-0d5a80ce5f49">
+    <div id="ctl00_ContentPlaceHolderPage_LayoutOfthePage_TemplateId_a832745f-8478-4578-9d8d-0d5a80ce5f49_SegmentId_3dc6db58-08b0-416c-a6fd-fa7c78f1bd01_partName_column2_ctl00_PanelContenerImage" class="PanelContenerImage imageRight">
+                                   
+        <img src="../public/imgs/frauenhofer.gif" border="0" />
+    
+    </div>  
+
+    <div style="width: 0px; height: 0px;"></div><ul><li><span style="font-weight: bold;">Fraunhofer Institut (IVV)</span><br /><br />Zusammenarbeit und Entwicklung im Bereich der
+Nahrungsmittelextraktion.</li></ul>
+    <div class="Clear"></div>
+</div>  
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-44f3-8850-ef5a96d50de3">
+   
+
+
+
+<div class="a832745f-8478-44f3-8850-ef5a96d50de3 Title">
+    <h1>Hofgut Storzeln - Referenzen<br /></h1>
+</div>
+ 
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+    <div style="width: 0px; height: 0px;"></div><ul><li><span style="font-weight: bold;">Eigenland</span><br />Umstellung auf biologische Wirtschaftsweise, Ausführung der gesamten Bewirtschaftung, Ackerbau / Mutterkuhhaltung etc.<br /></li></ul><ul><li><span style="font-weight: bold;">Kloster Hegne</span><br />Umstellung auf biologische Wirtschaftsweise, Ausführung der gesamten Bewirtschaftung, Ackerbau / Flächenpflege / Mutterkuhhaltung</li></ul><ul style="font-weight: bold;"><li>Vertragsanbau Soja:<br /><span style="font-weight: normal;">Verschiedene Biobetriebe</span></li></ul>              
+</div>
+
+</div>
+        
+    </div>
+    
+    <div class="Column3">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/hofgut_large.jpg"><img src="../public/imgs/hofgut.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/produkte_large.jpg"><img src="../public/imgs/produkte.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/leistungen_large.jpg"><img src="../public/imgs/leistungen.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/tierzucht_large.jpg"><img src="../public/imgs/tierzucht.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+    </div>
+
+    <div class="Clear"></div>
+
+    
+</div>
+
+            <div style="position: fixed; left: 0; bottom: 0; display: none;">
+                <input type="submit" name="ctl00$ContentPlaceHolderPage$ButtonRefresh" value="Refresh" id="ctl00_ContentPlaceHolderPage_ButtonRefresh" class="jQueryRefreshEditContent" />
+            </div>
+        
+</div>
+
+    <div id="ctl00_ContentPlaceHolderPage_UpdateProgressAll" style="display:none;">
+    
+            <div class="ProgressAll AjaxLoaderContainer">
+                <img class="AjaxLoader" src="../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+            </div>
+        
+</div>
+
+    <div class="ProgressAll AjaxLoaderContainer ProgresUloadImageShop jQueryAjaxLoaderContainer" style="display: none;">
+        <img id="ctl00_ContentPlaceHolderPage_Image1" class="AjaxLoader" src="../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+    </div>
+

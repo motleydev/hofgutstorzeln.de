@@ -1,0 +1,148 @@
+<script type="text/javascript">
+    var bannersUrls = new Array("../../public/imgs/postkarte.jpg","../public/imgs/storzeln_historisch.jpg","../public/imgs/luftbild_historisch.jpg","../public/imgs/hofgut_aussen.jpg"); 
+    var timeSpeed = 3000;
+    var firstBannerTimeSpeed = 3000;
+    var acctualBanner = 0;
+    var repeatFirstBanner = true;   
+    
+    $(document).ready(function() {
+        $("img.ImageBannerTop").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").hide(); 
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner + 1]);   
+
+        // #### MG: 2011-12-13
+        if(bannersUrls.length > 1)
+        {
+            setTimeout('nextBanner()', firstBannerTimeSpeed);
+        }
+      
+        
+        $(".ContainerBannerRotator").hoverIntent(function() { $(this).find(".ContainerBannerEditButton").show(); },
+            function() { $(this).find(".ContainerBannerEditButton").fadeOut('fast'); }); 
+            
+        //        $('.BannerRotatorOpenEditPopup').click(function() {
+        //            $('#HiddenModalEditBanners').slideDown('normal');                                                 
+        //        });   
+        //        
+        //        $('#EditBannersCloseButton').click(function() {
+        //            $('#HiddenModalEditBanners').slideUp('normal');
+        //        });
+        
+    });
+    
+    function nextBanner()
+    {
+        $("img.ImageBannerTop").show();
+        acctualBanner = acctualBanner + 1;
+
+        if(acctualBanner > (bannersUrls.length - 1))
+        {
+            if(repeatFirstBanner)
+                acctualBanner = 0;
+            else
+                acctualBanner = 1; 
+        }
+
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").show();
+        
+        $("img.ImageBannerTop").fadeOut(1500, function() {
+            $(this).attr("src", bannersUrls[acctualBanner]);
+            //$(this).show();
+            //$(this).fadeIn('fast');
+        });                       
+         
+        setTimeout('nextBanner()', timeSpeed);
+    } 
+    
+</script>
+
+<div class="Column2">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-44f3-8850-ef5a96d50de3">
+   
+
+
+
+<div class="a832745f-8478-44f3-8850-ef5a96d50de3 Title">
+    <h1>Hofgut Storzeln - Geschichte<br /></h1>
+</div>
+ 
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+    <div style="width: 0px; height: 0px;"></div><span style="font-weight: bold;">1382</span><br />Im Jahre 1382 wurde das Hofgut erstmals urkundlich erwähnt und ging damals von Heinrich von Roggwil an das Kloster Münsterlingen über, welches das Hofgut Storzeln an Jakob Rüpplin von Frauenfeld veräusserte. Das Hofgut kam anschließend in den Besitz des Franz Josef Kripp von Freudeneck, dessen Tochter Maria Franziska Theresia es 1730 in die Ehe mit Johann Alexander von Freiberg-Wellendingen einbrachte. <br /><br /><span style="font-weight: bold;">1849</span><br />Ihre Schwiegertochter Maria Johanna von Imhof verkaufte Storzeln an Maria Xaveria von Hornstein in Binningen, von deren Nachfahren wurde 1849 das Hofgut Storzeln an Johann Winzeler aus Barzheim verkauft. Um 1900 errichteten die Winzelers eine Spinnerei und Tuchfabrik in Storzeln und veräußerten 1914 das Hofgut und die Tuchfabrik an Herrn von Patow. <br /><br /><span style="font-weight: bold;">1916</span><br />Die Stadt Stuttgart kaufte das Hofgut Storzeln für 35 000,- Goldmark von Herrn von Patow um die Milchversorgung Stuttgarter Krankenhäuser sicherzustellen. In den Gebäuden betrieb die Stadt Stuttgart bis in die 70er Jahre ein Kindererholungsheim. Ab 1979 gewerbliche Nutzung der Kinderheimgebäude.<br /><br /><span style="font-weight: bold;">1989</span><br />Aus politischen Gründen, 1989 Auflösung, Verkauf und Parzellierung vom Hofgut Storzeln und damit vorerst das „Aus“ für einen der schönsten Höfe im Hegau.<br />Die landwirtschaftlichen Flächen gingen an das Land Baden-Württemberg (LBBW) und die Gebäude in den Besitz der Kompostwerk Landkreis Konstanz GmbH und an andere gewerbliche Eigentümer.<br /><br /><span style="font-weight: bold;">2007</span><br />Ab dem Jahr 2007 begann das Ehepaar Dirk und Martina Emrich alle zum ehemaligen Hofgut gehörenden Flächen und Gebäude von den einzelnen Besitzern zu erwerben. <br />Im Jahr 2010 war das Hofgut wieder als Ganzes zusammengeführt und ist seitdem im Besitz der Familie Emrich, die dort eine biologische Landwirtschaft und ein Agrardienstleistungsunternehmen betreibt.  <br /><br />              
+</div>
+
+</div>
+        
+    </div>
+    
+    <div class="Column3">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/geschichte_storzeln_01_large.jpg"><img src="../public/imgs/geschichte_storzeln_01.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/geschichte_storzeln_02_large.jpg"><img src="../public/imgs/geschichte_storzeln_02.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/geschichte_storzeln_03_large.jpg"><img src="../public/imgs/geschichte_storzeln_03.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/geschichte_storzeln_04_large.jpg"><img src="../public/imgs/geschichte_storzeln_04.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+    </div>
+
+    <div class="Clear"></div>
+
+    
+</div>
+
+            <div style="position: fixed; left: 0; bottom: 0; display: none;">
+                <input type="submit" name="ctl00$ContentPlaceHolderPage$ButtonRefresh" value="Refresh" id="ctl00_ContentPlaceHolderPage_ButtonRefresh" class="jQueryRefreshEditContent" />
+            </div>
+        
+</div>
+
+    <div id="ctl00_ContentPlaceHolderPage_UpdateProgressAll" style="display:none;">
+	
+            <div class="ProgressAll AjaxLoaderContainer">
+                <img class="AjaxLoader" src="../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+            </div>
+        
+</div>
+
+    <div class="ProgressAll AjaxLoaderContainer ProgresUloadImageShop jQueryAjaxLoaderContainer" style="display: none;">
+        <img id="ctl00_ContentPlaceHolderPage_Image1" class="AjaxLoader" src="../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+    </div>
+

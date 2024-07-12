@@ -1,0 +1,32 @@
+{
+  "bewirtschaftungs-und-pachtvertraege":
+  {
+    "title": "Bewirtschaftungsverträge und Pachtverträge Kreis Konstanz",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_landwirtschaftliche-dienstleistungen site_bewirtschaftungs-und-pachtvertraege"
+  },
+  "getreidereinigung":
+  {
+    "title": "Getreidereinigung mobil Kreis Konstanz",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_landwirtschaftliche-dienstleistungen site_getreidereinigung"
+  },
+  "getreidetrocknung":
+  {
+    "title": "Getreidetrocknung Kreis Konstanz",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_landwirtschaftliche-dienstleistungen site_getreidetrocknung"
+  },
+  "lohn-und-regiearbeiten":
+  {
+    "title": "Lohnarbeiten, Regiearbeiten Landwirtschaftliche Dienstleistungen Kreis Konstanz",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_landwirtschaftliche-dienstleistungen site_lohn-und-regiearbeiten"
+  },
+  "maehdrescher":
+  {
+    "title": "Mähdrescher im Lohn - Kreis Konstanz",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_landwirtschaftliche-dienstleistungen site_maehdrescher"
+  }
+}

@@ -1,0 +1,223 @@
+<script type="text/javascript">
+    var bannersUrls = new Array("../../public/imgs/traktor_hegne.jpg","../public/imgs/containerreinigung.jpg","../public/imgs/maehdrescher.jpg","../public/imgs/traktor_acker.jpg"); 
+    var timeSpeed = 3000;
+    var firstBannerTimeSpeed = 3000;
+    var acctualBanner = 0;
+    var repeatFirstBanner = true;   
+    
+    $(document).ready(function() {
+        $("img.ImageBannerTop").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").hide(); 
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner + 1]);   
+
+        // #### MG: 2011-12-13
+        if(bannersUrls.length > 1)
+        {
+            setTimeout('nextBanner()', firstBannerTimeSpeed);
+        }
+      
+        
+        $(".ContainerBannerRotator").hoverIntent(function() { $(this).find(".ContainerBannerEditButton").show(); },
+            function() { $(this).find(".ContainerBannerEditButton").fadeOut('fast'); }); 
+            
+        //        $('.BannerRotatorOpenEditPopup').click(function() {
+        //            $('#HiddenModalEditBanners').slideDown('normal');                                                 
+        //        });   
+        //        
+        //        $('#EditBannersCloseButton').click(function() {
+        //            $('#HiddenModalEditBanners').slideUp('normal');
+        //        });
+        
+    });
+    
+    function nextBanner()
+    {
+        $("img.ImageBannerTop").show();
+        acctualBanner = acctualBanner + 1;
+
+        if(acctualBanner > (bannersUrls.length - 1))
+        {
+            if(repeatFirstBanner)
+                acctualBanner = 0;
+            else
+                acctualBanner = 1; 
+        }
+
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").show();
+        
+        $("img.ImageBannerTop").fadeOut(1500, function() {
+            $(this).attr("src", bannersUrls[acctualBanner]);
+            //$(this).show();
+            //$(this).fadeIn('fast');
+        });                       
+         
+        setTimeout('nextBanner()', timeSpeed);
+    } 
+    
+</script>
+
+<div class="Column2">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-44f3-8850-ef5a96d50de3">
+   
+
+
+
+<div class="a832745f-8478-44f3-8850-ef5a96d50de3 Title">
+    <h1>Landwirtschaftliche Dienstleistungen - Getreidetrocknung</h1>
+</div>
+ 
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+    <div style="width: 0px; height: 0px;"></div><b>  
+      
+        Mobile Getreidetrocknung:</b><div><b><br /></b>Die Hofgut Storzeln GmbH bietet ein innovatives Trocknungs- und Transportsystem an. <br /><br />Die Innovation besteht im Wesentlichen darin für die Trocknung regional vorhandene überschüssige Energien (Abwärme der Biogasanlage) zu nutzen. Dafür wurden spezielle Trocknungscontainer entwickelt, welche an die Biogasanlagen angeschlossen werden und eine definierte Trocknung gewährleisten. Anschließend wird Ihr Erntegut direkt aus den Containern geliefert oder verladen.<br /></div>              
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/getreidereinigung_schema_large.gif"><img src="../public/imgs/getreidereinigung_schema.gif" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+    <div style="width: 0px; height: 0px;"></div>
+       
+         
+      
+        
+       Alle Container basieren auf einem standardisierten Hakenlift-System und sind wahlweise mit LKW oder landwirtschaftlichen Maschinen zu transportieren.<br /><br /><span style="font-weight: bold;">Vorteile:</span><br /><ul><li>Geringe Energiekosten</li><li>Reduzierung CO2 – Ausstoß durch:<br />- Treibstoffeinsparung Transporte<br />- Energieeinsparung Fördereinheiten<br />- Nutzung von regional vorhandener<br />- regenerativer Energie zur Trocknung<br /></li></ul><ul><li>Gewährleistung von Transparenz und Nachverfolgbarkeit</li></ul><ul><li>Entzerrung der Transportkette (kein Umladen, keine Wartezeiten)</li></ul><br />Gerne übernehmen wir für Sie die Getreidereinigung und die Getreidetrocknung.              
+                  
+                  
+</div>
+
+</div>
+        
+    </div>
+    
+    <div class="Column3">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/pfluegen_hegne_large.jpg"><img src="../public/imgs/pfluegen_hegne.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/dreschen_hegne_large.jpg"><img src="../public/imgs/dreschen_hegne.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/reinigung_large.jpg"><img src="../public/imgs/reinigung.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/container_large.jpg"><img src="../public/imgs/container.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+    </div>
+
+    <div class="Clear"></div>
+
+    
+</div>
+
+            <div style="position: fixed; left: 0; bottom: 0; display: none;">
+                <input type="submit" name="ctl00$ContentPlaceHolderPage$ButtonRefresh" value="Refresh" id="ctl00_ContentPlaceHolderPage_ButtonRefresh" class="jQueryRefreshEditContent" />
+            </div>
+        
+</div>
+
+    <div id="ctl00_ContentPlaceHolderPage_UpdateProgressAll" style="display:none;">
+	
+            <div class="ProgressAll AjaxLoaderContainer">
+                <img class="AjaxLoader" src="../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+            </div>
+        
+</div>
+
+    <div class="ProgressAll AjaxLoaderContainer ProgresUloadImageShop jQueryAjaxLoaderContainer" style="display: none;">
+        <img id="ctl00_ContentPlaceHolderPage_Image1" class="AjaxLoader" src="../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+    </div>
+
+    
+
+    
+
+     
+    <div class="jQueryResizeImageInfoBox ResizeImageInfoBox" style="display: none;"></div>
+    
+
+
+            
+            <div id="Footer">
+                <div class="TextImpressum">
+                    <a href="../impressum.html">Impressum</a>
+                </div>
+                <div class="TextKontakt">
+                    Hofgut Storzeln | Storzeln 1 | 78247 Hilzingen | Telefon: 0 77 39 / 92 88 462
+                </div>
+                &copy; Hofgut Storzeln GmbH - 2014
+            </div>
+        </div>
+            
+    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26297686-1']);
+  _gaq.push (['_gat._anonymizeIp']); 
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+$(document).ready(function(){
+$("#Header").find("a[href='http://www.produkte.hofgutstorzeln.de']").attr("href","http://produkte.hofgutstorzeln.com");
+});
+
+</script>
+    
+
+       
+
+    </form>
+</body>
+</html>

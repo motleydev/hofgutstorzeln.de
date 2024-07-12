@@ -1,0 +1,20 @@
+{
+  "geschichte":
+  {
+    "title": "Geschichte",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_hofgut-storzeln site_geschichte"
+  },
+  "kontakt":
+  {
+    "title": "Kontakt",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_hofgut-storzeln site_kontakt"
+  },
+  "partner-und-referenzen":
+  {
+    "title": "Institut für Agrarökologie, Plenum, Bioland, ABCert, Frauenhofer Institut",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_hofgut-storzeln site_partner-und-referenzen"
+  }
+}

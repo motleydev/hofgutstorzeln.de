@@ -1,0 +1,20 @@
+{
+  "index":
+  {
+    "title": "Hofgut Storzeln - Landwirtschaft , Agrarunternehmen in Biolandbau & Rohstoffweiterverarbeitung - Landkreis Konstanz",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_hofgut-storzeln site_home"
+  },
+  "impressum":
+  {
+    "title": "Hofgut Storzeln GmbH",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_impressum site_impressum"
+  },
+   "datenschutzpolicy-zu-google-analytics":
+  {
+    "title": "Datenschutzpolicy zu Google Analytics",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_impressum ParentNav_pferdezucht site_datenschutzpolicy-zu-google-analytics"
+  }
+}

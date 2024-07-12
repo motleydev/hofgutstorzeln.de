@@ -1,0 +1,8 @@
+{
+  "globals":
+  {
+    "title": "The Awesome Title",
+    "description": "The More Awesome Description",
+    "classes": "the classes that we use"
+  }
+}

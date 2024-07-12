@@ -1,0 +1,159 @@
+<script type="text/javascript">
+    var bannersUrls = new Array("../public/imgs/hofgut_aussen.jpg","../public/imgs/bodensee.jpg","../public/imgs/traktor_feld.jpg","../public/imgs/hofgut_aussen-alles.jpg","../public/imgs/hofgut_schild.jpg"); 
+    var timeSpeed = 4000;
+    var firstBannerTimeSpeed = 4000;
+    var acctualBanner = 0;
+    var repeatFirstBanner = true;   
+    
+    $(document).ready(function() {
+        $("img.ImageBannerTop").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").hide(); 
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner + 1]);   
+
+        // #### MG: 2011-12-13
+        if(bannersUrls.length > 1)
+        {
+            setTimeout('nextBanner()', firstBannerTimeSpeed);
+        }
+      
+        
+        $(".ContainerBannerRotator").hoverIntent(function() { $(this).find(".ContainerBannerEditButton").show(); },
+            function() { $(this).find(".ContainerBannerEditButton").fadeOut('fast'); }); 
+            
+        //        $('.BannerRotatorOpenEditPopup').click(function() {
+        //            $('#HiddenModalEditBanners').slideDown('normal');                                                 
+        //        });   
+        //        
+        //        $('#EditBannersCloseButton').click(function() {
+        //            $('#HiddenModalEditBanners').slideUp('normal');
+        //        });
+        
+    });
+    
+    function nextBanner()
+    {
+        $("img.ImageBannerTop").show();
+        acctualBanner = acctualBanner + 1;
+
+        if(acctualBanner > (bannersUrls.length - 1))
+        {
+            if(repeatFirstBanner)
+                acctualBanner = 0;
+            else
+                acctualBanner = 1; 
+        }
+
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").show();
+        
+        $("img.ImageBannerTop").fadeOut(1500, function() {
+            $(this).attr("src", bannersUrls[acctualBanner]);
+            //$(this).show();
+            //$(this).fadeIn('fast');
+        });                       
+         
+        setTimeout('nextBanner()', timeSpeed);
+    } 
+    
+</script>
+<div class="Column2">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-44f3-8850-ef5a96d50de3">
+   
+
+
+
+<div class="a832745f-8478-44f3-8850-ef5a96d50de3 Title">
+    <h1>Impressum</h1>
+</div>
+ 
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+      
+      
+        
+         
+      
+        
+       
+       Hofgut Storzeln GmbH<br />Storzeln 1<br />78247 Hilzingen<br /><br />Vertretungsberechtiger Geschäftsführer: Simon Schorre,  Dipl.-Agr.-Ing.<br /><br />Telefon: +49 7739 / 92 88 462<br />Telefax: +49 7739 / 92 88 464<br /><br />E-Mail: <a href="mailto:info@hofgutstorzeln.de" target="_self">info@hofgutstorzeln.de</a><br />Inhaltlich Verantwortlicher: Simon Schorre (Anschrift s.o.)<br /><a href="mailto:info@hofgutstorzeln.de" target="_self"></a><a href="mailto:info@hofgutstorzeln.de" target="_self"></a>              
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+    <div style="width: 0px; height: 0px;"></div><span style="font-weight: bold;">Informationen zum Datenschutz:</span><br /> <br />Die von Ihnen an uns überlassenen Daten werden aussschliesslich von Hofgut Storzeln GmbH zur Verarbeitung einer Anfrage genutzt.<br />Keinesfalls werden die Daten an Dritte weitergegeben.<br /><br />Ansprechpartner für Datenschutz:<br /> <br />Simon Schorre<br />Telefon: +49 7739 / 92 88 462<br /><a href="mailto:s.schorre@hofgutstorzeln.de" target="_self">s.schorre@hofgutstorzeln.de</a>              
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+    <div style="width: 0px; height: 0px;"></div><a href="../datenschutzpolicy-zu-google-analytics.html" target="_self">Datenschutzpolicy zu Google Analytics</a>              
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+    <div style="width: 0px; height: 0px;"></div><span style="font-weight: bold;">Fotografennachweis</span><br /><br />Headerbilder<br /><br /><span style="font-style: italic;">Landwirtschaftliche Produkte </span><br />© Junior Gobira - Fotolia.com - Sojabohne<br />© K.Trojan - Fotolia.com - Weizenähre<br />© Filmfokus - Fotolia.com - Leinsamen<br />© simonkr - Fotolia.com - Hand im Feld<br />© sima - Fotolia.com - Sojafeld <br />              
+                  
+    <br /><span style="font-style: italic;">Konzentrate &amp; Extrakte</span><br />© Lucky Dragon - Fotolia.com - Sojabohnen<br />© Comugnero Silvana - Fotolia.com - Blütenstengel mit Pipette<br />© Lemonade - Fotolia.com - Laborszene<br />© Janine Fretz Weber - Fotolia.com - Zitronenmelisse<br /><br /><span style="font-style: italic;">Historische Aufnahmen</span><br />Quellen nicht verfügbar<br /><br /><span style="font-style: italic;">alle weiteren Fotografien</span><br />© Hofgut Storzeln GmbH und komm-ins-web.de<br />              
+</div>
+
+</div>
+        
+
+<p>
+    <b>Technische Umsetzung</b><br />
+    <br />
+    Komm-Ins-Web.de<br />
+    Leonhardstr. 68<br />
+    78333 Stockach<br />
+    <br />
+    <a href="http://www.komm-ins-web.de" target="_blank">www.komm-ins-web.de</a>
+</p>
+    </div>
+    
+    <div class="Column3">
+        
+    </div>
+
+    <div class="Clear"></div>
+
+    
+</div>
+
+            <div style="position: fixed; left: 0; bottom: 0; display: none;">
+                <input type="submit" name="ctl00$ContentPlaceHolderPage$ButtonRefresh" value="Refresh" id="ctl00_ContentPlaceHolderPage_ButtonRefresh" class="jQueryRefreshEditContent" />
+            </div>
+        
+</div>
+
+    <div id="ctl00_ContentPlaceHolderPage_UpdateProgressAll" style="display:none;">
+	
+            <div class="ProgressAll AjaxLoaderContainer">
+                <img class="AjaxLoader" src="Coresys/Media/Images/ajax-loader2.gif" alt="loading..." border="0" />
+            </div>
+        
+</div>
+
+    <div class="ProgressAll AjaxLoaderContainer ProgresUloadImageShop jQueryAjaxLoaderContainer" style="display: none;">
+        <img id="ctl00_ContentPlaceHolderPage_Image1" class="AjaxLoader" src="Coresys/Media/Images/ajax-loader2.gif" alt="loading..." border="0" />
+    </div>

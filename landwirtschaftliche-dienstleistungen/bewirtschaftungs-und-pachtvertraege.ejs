@@ -1,0 +1,154 @@
+<script type="text/javascript">
+    var bannersUrls = new Array("../../public/imgs/traktor_hegne.jpg","../public/imgs/containerreinigung.jpg","../public/imgs/maehdrescher.jpg","../public/imgs/traktor_acker.jpg"); 
+    var timeSpeed = 3000;
+    var firstBannerTimeSpeed = 3000;
+    var acctualBanner = 0;
+    var repeatFirstBanner = true;   
+    
+    $(document).ready(function() {
+        $("img.ImageBannerTop").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").hide(); 
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner + 1]);   
+
+        // #### MG: 2011-12-13
+        if(bannersUrls.length > 1)
+        {
+            setTimeout('nextBanner()', firstBannerTimeSpeed);
+        }
+      
+        
+        $(".ContainerBannerRotator").hoverIntent(function() { $(this).find(".ContainerBannerEditButton").show(); },
+            function() { $(this).find(".ContainerBannerEditButton").fadeOut('fast'); }); 
+            
+        //        $('.BannerRotatorOpenEditPopup').click(function() {
+        //            $('#HiddenModalEditBanners').slideDown('normal');                                                 
+        //        });   
+        //        
+        //        $('#EditBannersCloseButton').click(function() {
+        //            $('#HiddenModalEditBanners').slideUp('normal');
+        //        });
+        
+    });
+    
+    function nextBanner()
+    {
+        $("img.ImageBannerTop").show();
+        acctualBanner = acctualBanner + 1;
+
+        if(acctualBanner > (bannersUrls.length - 1))
+        {
+            if(repeatFirstBanner)
+                acctualBanner = 0;
+            else
+                acctualBanner = 1; 
+        }
+
+        $("img.ImageBannerBottom").attr("src", bannersUrls[acctualBanner]);
+        $("img.ImageBannerBottom").show();
+        
+        $("img.ImageBannerTop").fadeOut(1500, function() {
+            $(this).attr("src", bannersUrls[acctualBanner]);
+            //$(this).show();
+            //$(this).fadeIn('fast');
+        });                       
+         
+        setTimeout('nextBanner()', timeSpeed);
+    } 
+    
+</script>
+
+    <div class="Column2">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-44f3-8850-ef5a96d50de3">
+   
+
+
+
+<div class="a832745f-8478-44f3-8850-ef5a96d50de3 Title">
+    <h1>Landwirtschaftliche Dienstleisungen - Bewirtschaftungs- &amp; Pachtverträge<br /></h1>
+</div>
+ 
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-4566-b76c-f3004454c693">
+   
+
+
+
+<div class="a832745f-8478-4566-b76c-f3004454c693">
+    <div style="width: 0px; height: 0px;"></div><b>
+       Bewirtschaftungsverträge - Die Alternative zur Verpachtung<br /><br /></b>Als für den Kunden wirtschaftlich interessante und flexible Alternative zu einem Pachtvertrag bietet die Hofgut Storzeln GmbH einen Bewirtschaftungsvertrag für Ihre landwirtschaftlichen Flächen an.<div><br />Der wesentliche Unterschied unserer Dienstleistung ist die Einbeziehung des Kunden bei allen grundsätzlichen Entscheidungen, sowie dessen finanzielle Beteiligung am wirtschaftlichen Erfolg.</div><div><br />Dabei ist der Kunde maßgeblich an den Anbauentscheidungen beteiligt und wird von der Hofgut Storzeln GmbH beraten. Die Hofgut Storzeln GmbH übernimmt die gesamte Umsetzung der getroffenen Anbauentscheidungen.</div><div><br />Im Rahmen eines Bewirtschaftungsvertrages erhält der Kunde den Status eines Landwirtschaftsbetriebes und bekommt eintsprechend den Zahlungsansprüchen Flächenbeihilfen, sowie die Prämie für ökologische Bewirtschaftung.               
+    <p class="MsoNormal">Als ganzheitliche
+Dienstleistung umfasst ein Bewirtschaftungsvertrag:</p><p class="MsoNormal" /><ul><li>Umstellung der Flächen auf
+ökologischen Landbau</li><li>Monitoring der Fauna und Flora</li><li>Unterstützung bei  der Nutzungs- und Anbauplanung </li><li>Vorfinanzierung der Ernte / Einkauf der Betriebsmittel </li><li>Selbstständige Ausführung aller ackerbaulichen Tätigkeiten </li><li>Übernahme und Abwicklung aller Korrespondenzen mit den zuständigen Behörden </li><li>Erstellung des Gemeinsamen Antrags </li><li>Flächenpflege </li><li>Ernte, Aufbereitung und Einlagerung </li><li>Auf Wunsch Vermarktung der Feldfrüchte </li><li>Abrechnung und Auswertung</li></ul><p class="MsoNormal">Nähere Informationen
+zu einem Bewirtschaftungsvertrag geben wir Ihnen gerne in einem
+weiterführenden Gespräch.</p><p class="MsoNormal" /><p class="MsoNormal"><b>Pachtvertrag – garantiert biologisch:</b></p><p class="MsoNormal">Die Hofgut Storzeln GmbH ist an langfristigen Pachtverträgen interessiert. Die Bewirtschaftung ist durch folgende Merkmale gekennzeichnet.</p><p class="MsoNormal">Wir möchten auf folgende Vorteile für den Verpächter bei einer Bewirtschaftung durch das Hofgut Storzeln hinweisen: </p><p class="MsoNormal" /><p class="MsoNormal" /><ul><li>Biologische Bewirtschaftung sowie standortangepasste Nutzung der Flächen</li><li>Regelmäßiges Monitoring der Fauna und Flora sowie des Bodenzustandes</li><li>Bodenschonende Bewirtschaftung mit ausschließlich breit bereiften Maschinen</li><li>Einführung einer min.  4gliedrigen Fruchtfolge</li><li>Kein Anbau von Biogas–Substraten (Mais/GPS) mit den entsprechenden Folgeschäden für die Flächen durch überschwere Maschinen</li><li>Regelmäßige Anlage von Blüh- und Jagdstreifen </li><li>Anstieg des Niederwildaufkommens durch Reihenanbau (Weite Reihe) bei allen Kulturen </li><li>Regelmäßige Feld- und Waldrandpflege </li><li>Ordnungsgemäße Grünlandbewirtschaftung mit jährlicher Nachsaat</li><li>Stabiles Unkrautmanagement im ökologischen Landbau durch spezielles Anbauverfahren </li><li>Jährlicher Zwischenfruchtanbau zur Ackerbegrünung und zum Erosionsschutz </li></ul><p /><p class="MsoNormal">Bei Interesse an einem Pachtvertrag wenden Sie sich bitte an Herrn Schorre.</p><p class="MsoNormal">Gerne senden wir Ihnen genaue Informationen zum Pachtvertrag zu</p><p /><p /></div>              
+</div>
+
+</div>
+        
+    </div>
+    
+    <div class="Column3">
+        
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/pfluegen_hegne_large.jpg"><img src="../public/imgs/pfluegen_hegne.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/dreschen_hegne_large.jpg"><img src="../public/imgs/dreschen_hegne.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/reinigung_large.jpg"><img src="../public/imgs/reinigung.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+<div class="Segment SegmentViev wxs-segment wxs-segment-a832745f-8478-45f4-98c9-28bdcb7c7b15">
+   
+
+
+<div class="a832745f-8478-45f4-98c9-28bdcb7c7b15">
+    <div class='PanelImageContenerInImageTemplateLeft'><a href="../public/imgs/container_large.jpg"><img src="../public/imgs/container.jpg" alt=" " border="0" /></a><br /></div>
+</div>
+
+</div>
+    </div>
+
+    <div class="Clear"></div>
+
+    
+</div>
+
+            <div style="position: fixed; left: 0; bottom: 0; display: none;">
+                <input type="submit" name="ctl00$ContentPlaceHolderPage$ButtonRefresh" value="Refresh" id="ctl00_ContentPlaceHolderPage_ButtonRefresh" class="jQueryRefreshEditContent" />
+            </div>
+        
+</div>
+
+    <div id="ctl00_ContentPlaceHolderPage_UpdateProgressAll" style="display:none;">
+	
+            <div class="ProgressAll AjaxLoaderContainer">
+                <img class="AjaxLoader" src="../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+            </div>
+        
+</div>
+
+    <div class="ProgressAll AjaxLoaderContainer ProgresUloadImageShop jQueryAjaxLoaderContainer" style="display: none;">
+        <img id="ctl00_ContentPlaceHolderPage_Image1" class="AjaxLoader" src="../public/imgs/ajax-loader2.gif" alt="loading..." border="0" />
+    </div>
+

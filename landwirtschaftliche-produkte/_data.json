@@ -1,0 +1,14 @@
+{
+  "eigene-erzeugnisse":
+  {
+    "title": "Erzeugnisse, Soja, Getreide, Weizen von Hofgut Storzeln",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_landwirtschaftliche-produkte site_eigene-erzeugnisse"
+  },
+  "handel-mit-agrarprodukten":
+  {
+    "title": "Handel mit Agrarprodukten",
+    "description": "Die Hofgut Storzeln GmbH ist als Agrarunternehmen in den Bereichen Biolandbau und Rohstoffweiterverarbeitung im Hegau und am Bodensee tätig.",
+    "classes": "channel_landwirtschaftliche-produkte site_handel-mit-agrarprodukten"
+  }
+}
